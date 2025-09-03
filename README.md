@@ -14,7 +14,6 @@
 ###
 
 ![Snake animation](https://github.com/julioau15/julioau15/blob/output/github-contribution-grid-snake.svg)
-<img src="https://raw.githubusercontent.com/julioau15/julioau15/output/snake.svg" alt="Snake animation" />
 
 ###
 
