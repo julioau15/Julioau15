@@ -1,16 +1,22 @@
 name: Generate Snake
 
 on:
-  schedule: # roda uma vez por dia
-    - cron: "0 0 * * *"
-  workflow_dispatch: # permite rodar manualmente
+  schedule:
+    - cron: '0 0 * * *'   # roda todo dia à 00:00 UTC
+  workflow_dispatch:     # permite rodar manualmente
+
+permissions:
+  contents: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout do repositório
-        uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          fetch-depth: 0
 
       - name: Gerar animação da cobrinha
         uses: Platane/snk@v3
@@ -18,10 +24,39 @@ jobs:
           github_user_name: julioau15
           outputs: dist/github-contribution-grid-snake.svg
 
-      - name: Publicar no branch "output"
-        uses: crazy-max/ghaction-github-pages@v3.1.0
-        with:
-          target_branch: output
-          build_dir: dist
+      - name: Mostrar o que foi gerado (debug)
+        run: |
+          echo "Conteúdo de dist/:"
+          ls -la dist || true
+
+      - name: Commit SVG to 'output' branch
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -e
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          if [ ! -f dist/github-contribution-grid-snake.svg ]; then
+            echo "::error::SVG não encontrado em dist/ — a geração falhou."
+            ls -la dist || true
+            exit 1
+          fi
+
+          git fetch origin
+
+          # Se existir branch remoto 'output', troca pra ele; senão cria orphan
+          if git ls-remote --exit-code --heads origin output; then
+            git checkout output
+          else
+            git checkout --orphan output
+            git reset --hard
+          fi
+
+          # Limpa o conteúdo do branch (se houver) e adiciona só o SVG
+          git rm -rf . || true
+          mkdir -p .
+          cp dist/github-contribution-grid-snake.svg github-contribution-grid-snake.svg
+          git add github-contribution-grid-snake.svg
+          git commit -m "Update snake SVG" || echo "Nada novo para commitar"
+          git push --force origin output
