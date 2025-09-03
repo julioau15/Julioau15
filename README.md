@@ -1,4 +1,4 @@
-<h2 align="left">Eai 🖐️ Eu sou o Julio e estou estudando programação no Senai 🧑‍💻</h2>
+<h2 align="center">Eai 🖐️ Eu sou o Julio e estou estudando programação no Senai 🧑‍💻</h2>
 
 ###
 
