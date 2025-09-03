@@ -3,8 +3,6 @@
 ###
 
 <div align="center">
-
-  <p align="center">💻 Meus stats do GitHub 💻</p>
 <p> <img src="https://github-readme-stats.vercel.app/api?username=julioau15&hide_title=true&show_icons=true&theme=dracula" height="150" alt="stats graph" /> </p>
  <p> <img src="https://github-readme-stats.vercel.app/api/top-langs?username=julioau15&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false" height="150" alt="languages graph"  /> </p>
 </div>
