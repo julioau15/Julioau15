@@ -1,10 +1,10 @@
-<h2 align="center">Eai 🖐️ Eu sou o Julio e estou estudando programação 🧑‍💻</h2>
+<h2 align="center">Eu sou o Julio e estou estudando programação 🧑‍💻</h2>
 
 ###
 
 <div align="center">
  
- # 📊 GitHub Stats:
+ # GitHub Stats:
 
 ![](https://nirzak-streak-stats.vercel.app/?user=julioau15&theme=dark&hide_border=false)<br/>
 
