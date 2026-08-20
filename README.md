@@ -45,6 +45,12 @@ Sou um estudante do 3° semestre de <strong>Desenvolvimento de Sistemas</strong>
     <img width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" />
   </kbd>
   <kbd>
+    <kbd>Mobile</kbd>
+    <br>
+    <br>
+    <img width="30px" alt="image" src="https://github.com/user-attachments/assets/24eb6e17-6349-411d-9428-1a12981bc513" />
+  </kbd>
+  <kbd>
     <kbd>Outros</kbd>
     <br>
     <br>
