@@ -23,6 +23,7 @@ Sou um estudante do 3° semestre de <strong>Desenvolvimento de Sistemas</strong>
 <br>
   
 <p style="display: inline-block;" align="center">
+  
    <kbd>
     <kbd>Back-end</kbd>
     <br>
@@ -30,6 +31,7 @@ Sou um estudante do 3° semestre de <strong>Desenvolvimento de Sistemas</strong>
     <img width="30px" alt="image" src="https://github.com/user-attachments/assets/a1278d1d-c158-4aac-a133-b50f3d24a383" />
     <img width="30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg"/>
   </kbd>
+  
   <kbd>
     <kbd>Front-end</kbd>
     <br>
@@ -38,18 +40,23 @@ Sou um estudante do 3° semestre de <strong>Desenvolvimento de Sistemas</strong>
     <img width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg" /> 
     <img width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
   </kbd>
+  
   <kbd>
     <kbd>Library/FrameWorks</kbd>
     <br>
     <br>
+    <img width="30px" alt="image" src="https://github.com/user-attachments/assets/7c982040-8548-471f-88c6-d70cf7ef3265" />
+    <img width="30px" alt="image" src="https://github.com/user-attachments/assets/97dd4de6-b84d-4ad6-9adb-a6dab418ba0a" />
     <img width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" />
   </kbd>
+  
   <kbd>
     <kbd>Mobile</kbd>
     <br>
     <br>
     <img width="30px" alt="image" src="https://github.com/user-attachments/assets/24eb6e17-6349-411d-9428-1a12981bc513" />
   </kbd>
+  
   <kbd>
     <kbd>Outros</kbd>
     <br>
